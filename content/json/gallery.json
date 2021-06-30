@@ -1,0 +1,88 @@
+{
+    "images": [
+        {
+            "idNumb": "1" ,
+            "title": "Profile Picture",
+            "date":  "08/06/2021",
+            "url": "http://127.0.0.1:5500/content/images/gallery/seraphine.jpg",
+            "dataName": "moments"
+        },
+        {
+            "idNumb": "2",
+            "title": "Salon from inside",
+            "date":  "05/06/2021",
+            "url": "http://127.0.0.1:5500/content/images/gallery/frominside.jpg",
+            "dataName": "salon"
+        },
+        {
+            "idNumb": "3",
+            "title": "Lucy donation",
+            "date":  "05/06/2021",
+            "url": "http://127.0.0.1:5500/content/images/gallery/lucy12donate_v2.jpg",
+            "dataName": "moments"
+        },
+        {
+            "idNumb": "4",
+            "title": "Welcome Back!",
+            "date":  "05/06/2021",
+            "url": "http://127.0.0.1:5500/content/images/gallery/welcomebackTwo.jpg",
+            "dataName": "salon"
+        },
+        {
+            "idNumb": "5",
+            "title": "Chloe",
+            "date":  "05/06/2021",
+            "url": "http://127.0.0.1:5500/content/images/gallery/chloe_lynch.jpg",
+            "dataName": "moments"
+        },
+        {
+            "idNumb": "6",
+            "title": "Hair 01",
+            "date":  "08/06/2021",
+            "url": "http://127.0.0.1:5500/content/images/gallery/192356457_176820004445730_8203176955645360319_n.jpg",
+            "dataName": "hair"
+        },
+        {
+            "idNumb": "7",
+            "title": "Hair 02",
+            "date":  "08/06/2021",
+            "url": "http://127.0.0.1:5500/content/images/gallery/185172374_169929228468141_5995835303028223881_n.jpg",
+            "dataName": "hair"
+        },
+        {
+            "idNumb": "8",
+            "title": "Hair 03",
+            "date":  "08/06/2021",
+            "url": "http://127.0.0.1:5500/content/images/gallery/190129477_172948328166231_5988489093654346278_n.jpg",
+            "dataName": "hair"
+        },
+        {
+            "idNumb": "9",
+            "title": "Welcome Back",
+            "date":  "08/06/2021",
+            "url": "http://127.0.0.1:5500/content/images/gallery/welcomeBackThree.jpg",
+            "dataName": "salon"
+        },
+        {
+            "idNumb": "10",
+            "title": "Hamper",
+            "date":  "07/06/2021",
+            "url": "http://127.0.0.1:5500/content/images/gallery/153616993_753371848647302_3410824390852793675_n.jpg",
+            "dataName": "moments"
+        },
+        {
+            "idNumb": "11",
+            "title": "Montibello",
+            "date":  "07/06/2021",
+            "url": "http://127.0.0.1:5500/content/images/gallery/151734296_749365092381311_6061567468114817851_n.jpg",
+            "dataName": "product"
+        },
+        {
+            "idNumb": "12",
+            "title": "Joico",
+            "date":  "07/06/2021",
+            "url": "http://127.0.0.1:5500/content/images/gallery/144429343_741265976524556_4858692713667190016_n.jpg",
+            "dataName": "product"
+        }
+    ]       
+}

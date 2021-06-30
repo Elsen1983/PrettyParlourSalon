@@ -1,0 +1,234 @@
+#pricelistMainOne{
+    display: grid;
+    grid-template:  "pricelistOneOne" 
+                    "pricelistOneTwo" 
+                    "pricelistOneThree";
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    justify-items: center;
+}
+#pricelistMainOneOne{
+    grid-area: pricelistOneOne;
+}
+#pricelistMainOneTwo{
+    grid-area: pricelistOneTwo;
+    
+}
+#pricelistMainOneThree{
+    grid-area: pricelistOneThree;
+    padding-bottom: 50px;
+}
+
+#listsContainer{
+    padding: 0 25px 0 25px;
+    max-width: 1200px; /* + 2x25px = 1250px */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.fixMaxWidth{
+    max-width: 1250px;
+}
+
+.navBorder{
+    margin: 0 auto;
+    max-width: 1250px;
+    border-bottom: 2px solid #bfac7a;
+    border-radius: 0 0 40% 40%/0 0 30% 30%;
+    height: 25px;
+    top: -30px;
+    position: relative;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1250px;
+    padding-bottom: 20px;
+}
+.wrapper nav{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #bfac7a;
+    border-radius: 0 0 40% 40%/0 0 30% 30%;
+
+}
+.wrapper .items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 720px;
+    justify-content: center;
+    position: relative;
+    top: -20px;
+}
+
+
+.items span {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 5px 10px 0 10px;
+    font-weight: bold;
+}
+.items span:last-child {
+    margin-right: 0;
+}
+
+.items span:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.items span:hover:after {
+    width: 100%;
+    background: #bfac7a;
+}
+
+.listContainer{
+    background: url("../content/images/borders/pricelistpinkborder-03.png");
+    background-repeat: repeat;
+    background-size: auto;
+    background-repeat: round;
+    background-size: cover;
+    width: 50vw;
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 175px;
+    margin-bottom: 25px;
+    
+}
+
+.listContainer ul{
+    padding: 15px 35px 45px 35px;
+    margin: 5px;
+    line-height: 1.3em;
+}
+
+.listTitleSpan{
+    display: block;
+    padding: 30px 10px 0 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.listContainer ul li{
+    white-space: nowrap;
+    color: black;
+    font-size: 1.1em;
+    padding-bottom: 2px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.listContainer ul li p{
+    float: left;
+}
+
+.extramessage{
+    text-align: center;
+    font-size: 0.75em;
+    padding-bottom: 20px;
+    font-style: italic;
+    font-weight: bold;
+    width: 50vw;
+    min-width: 300px;
+    max-width: 900px;
+}
+
+/*for list elements*/
+.dot-div{
+    border-bottom:thin dashed gray; 
+    width:100%; 
+    height: 20px;
+}
+.text-div{
+    margin-top:-15px
+}
+.text-span{
+    background:#FDE5E5; 
+    padding-right:5px;
+    font-size: 0.7em;
+}
+.flipText{
+    display: inline-block;
+    transform: rotateY(180deg);
+}
+.pull-right{
+    float:right; 
+    padding-left:5px
+} 
+
+
+/*
+*******************
+-- Media Queries --
+*******************
+*/
+
+/*media queries for "small" mobiles*/
+@media screen and (max-width: 380px){
+
+}
+
+@media screen and (max-width: 480px){
+
+}
+
+/*media query for iPads, tablets and large phones*/
+@media screen and (min-width: 481px){
+
+} 
+
+@media screen and (max-width: 640px){
+
+}
+
+@media screen and (min-width: 641px){
+    .text-span {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+} 
+
+/*media query for small screens and laptops*/
+@media screen and (min-width: 769px){
+    .extramessage{
+        font-size: 1em;
+    }
+} 
+
+/*media query for desktops and large screens*/
+@media screen and (min-width: 1024px){
+    .text-span {
+        font-size: 1em;
+    }
+    .listContainer{
+        min-height: 225px;
+    }
+} 
+
+/*media query for extra large screens and TV*/
+@media screen and (min-width: 1201px){
+
+} 
+
+@media screen and (min-width: 1251px){
+    .text-span {
+        font-size: 1.1em;
+    }
+    .listContainer{
+        min-height: 275px;
+    }
+}

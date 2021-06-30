@@ -1,0 +1,57 @@
+https://nicepage.com/website-mockup/preview/modern-beauty-fashion-23526?device=desktop
+
+https://coolors.co/c1ac33-fff7eb-fce4da-f9d1bf-f99fb0-f32b50
+
+https://www.plouise.co.uk/
+
+https://mahersmeats.ie/checkout/
+
+
+
+https://www.youtube.com/watch?v=023Psne_-_4&t=320s
+
+Border radius for images : https://codepen.io/KBD/pen/obxoGK
+
+Page titles effect : https://codepen.io/ANAMAFLA/pen/eYJbGpd
+
+Responsive Filterable Image Gallery : https://www.codingnepalweb.com/filterable-image-gallery-javascript/
+
+Adaptive photo layout for gallery (flex) : https://codepen.io/maxvoltar/pen/eYOPdMG
+
+Products gallery : https://codepen.io/kathykato/pen/gdvjax
+
+Pure css slider : https://codepen.io/KamilDyrek/pen/ejmRxV
+
+PHP Contact Form with jQuery AJAX: https://phppot.com/jquery/php-contact-form-with-jquery-ajax/
+
+PHP email : https://kodbazis.hu/php-tanfolyam-haladoknak/email-kuldes-php-weboldalon
+
+Price list: https://jsfiddle.net/s6yfaeLp/
+
+token: dff1fd6f-5704-4a1e-83f7-827102732547
+Email.send({
+    SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body",
+	Attachments : [
+	{
+		name : "smtpjs.png",
+		path : "https://networkprogramming.files.wordpress.com/2017/11/smtpjs.png"
+	}]
+}).then(
+  message => alert(message)
+);
+
+
+
+.Layer_1 {
+  background-image: url("Layer 1.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 3155px;
+  height: 2033px;
+  z-index: 1;
+}

@@ -1,0 +1,179 @@
+{
+    "pricelist": [
+        {
+            "category": "styling" ,
+            "title": "Blowdyr Short",
+            "price": "€18"
+        },
+        {
+            "category": "styling" ,
+            "title": "Blowdyr Medium",
+            "price": "€20"
+        },
+        {
+            "category": "styling" ,
+            "title": "Blowdyr Long",
+            "price": "€22"
+        },
+        {
+            "category": "styling" ,
+            "title": "Curly Blowdyr",
+            "price": "€28"
+        },
+        {
+            "category": "styling" ,
+            "title": "GHD Blowdry",
+            "price": "€28"
+        },
+        {
+            "category": "styling" ,
+            "title": "Uptyles",
+            "price": "€38"
+        },
+        {
+            "category": "styling" ,
+            "title": "Dry Trim",
+            "price": "€20"
+        },
+        {
+            "category": "styling" ,
+            "title": "Kids Dry Trim",
+            "price": "€10"
+        },
+        {
+            "category": "styling" ,
+            "title": "Wash, Cut & Blowdry",
+            "price": "€38"
+        },
+        {
+            "category": "styling" ,
+            "title": "Wash, Cut & Curly Blowdry",
+            "price": "€40"
+        },
+        {
+            "category": "styling" ,
+            "title": "Men's Cut",
+            "price": "€12"
+        },
+        {
+            "category": "colours" ,
+            "title": "Colour & Blowdry",
+            "price": "€60"
+        },
+        {
+            "category": "colours" ,
+            "title": "T-Bar & Blowdry",
+            "price": "€60"
+        },
+        {
+            "category": "colours" ,
+            "title": "Half Head & Blowdry",
+            "price": "€80"
+        },
+        {
+            "category": "colours" ,
+            "title": "Full Head & Blowdry",
+            "price": "€110"
+        },
+        {
+            "category": "colours" ,
+            "title": "(Add Cut)",
+            "price": "€5"
+        },
+        {
+            "category": "specialist services",
+            "title": "Perms",
+            "price": "€70"
+        },
+        {
+            "category": "specialist services",
+            "title": "Hairtalk Extensions",
+            "price": "from €200-800"
+        },
+        {
+            "category": "specialist services",
+            "title": "Consultations",
+            "price": "Free"
+        },
+        {
+            "category": "waxing" ,
+            "title": "Eyebrow Wax",
+            "price": "€10"
+        },
+        {
+            "category": "waxing" ,
+            "title": "Eyebrow Wax & Tint",
+            "price": "€12"
+        },
+        {
+            "category": "waxing" ,
+            "title": "Lip",
+            "price": "€6"
+        },
+        {
+            "category": "waxing" ,
+            "title": "Chin",
+            "price": "€6"
+        },
+        {
+            "category": "waxing" ,
+            "title": "Half Leg",
+            "price": "€18"
+        },
+        {
+            "category": "waxing" ,
+            "title": "¾ Full Leg",
+            "price": "€22"
+        },
+        {
+            "category": "waxing" ,
+            "title": "Bikini",
+            "price": "€22"
+        },
+        {
+            "category": "waxing" ,
+            "title": "Brazilian",
+            "price": "€32"
+        },
+        {
+            "category": "waxing" ,
+            "title": "Hollywood",
+            "price": "€40"
+        },
+        {
+            "category": "waxing" ,
+            "title": "Underarm",
+            "price": "€12"
+        },
+        {
+            "category": "male waxing" ,
+            "title": "Back",
+            "price": "€25"
+        },
+        {
+            "category": "male waxing" ,
+            "title": "Chest",
+            "price": "€25"
+        },
+        {
+            "category": "male waxing" ,
+            "title": "Arms",
+            "price": "€25"
+        },
+        {
+            "category": "treatments" ,
+            "title": "Deep Penetrating Mask",
+            "price": "€10"
+        },
+        {
+            "category": "treatments" ,
+            "title": "K-Pack (4 Step)",
+            "price": "€25"
+        },
+        {
+            "category": "treatments" ,
+            "title": "Hair Supporters/Olaplex",
+            "price": "€25"
+        }
+    ]       
+}

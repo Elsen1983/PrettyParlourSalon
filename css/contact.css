@@ -1,0 +1,211 @@
+#contactMainOne{
+    display: grid;
+    grid-template:  "contactOneOne" 
+                    "contacttOneTwo" 
+                    "contactOneThree";
+    grid-template-rows: auto 1fr;
+    /* background-image: linear-gradient(#bfba7a00, rgb(247 192 202 / 28%)); */
+}
+#contactMainOneOne{
+    grid-area: contactOneOne;
+}
+#contactMainOneTwo{
+    grid-area: contacttOneTwo;
+    padding-bottom: 25px;
+    /* background-image: linear-gradient(#bfba7a00, rgb(247 192 202 / 28%)); */
+    background: rgb(255,255,255);
+    /* background: linear-gradient(180deg, white 0%, rgb(248, 216, 223) 20%, rgba(247,192,204,1) 40%, rgb(248, 216, 223) 80%, white 100%); */
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(247,192,204,0.5) 50%);
+}
+#contactMainOneThree{
+    grid-area: contactOneThree;
+    background-color: rgba(247,192,204,0.5);
+    width: 100%;
+    text-align: center;
+}
+
+#formContainer{
+    display: grid;
+    grid-template:  "contactFormA"
+                    "contactFormA"
+                    "contactFormB"
+                    "contactFormB"
+                    "contactFormB"
+                    "contactFormB"
+                    "contactFormC"
+                    "contactFormC";
+    /* margin: 0 auto; */
+    padding: 30px 10vw 30px 10vw;
+    max-width: 80vw;
+}
+
+#formContactA{
+    grid-area: contactFormA;
+}
+#formContactB{
+    grid-area: contactFormB;
+}
+#formContactC{
+    grid-area: contactFormC;
+}
+
+/*contact details*/
+#formContactA .getin{
+    font-size: 1.75em;
+}
+.smallSeparator{
+    border-top: 2px solid rgba(0, 0, 0, 0.795);
+    max-width: 50px;
+    margin: 10px 0 15px 0;
+}
+.contactSeparatedDivs{
+    margin-bottom: 25px;
+}
+.smallContactIcon{
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    font-size: 0.75em;
+    width: 30px;
+}
+.contactDetails{
+    display: table-cell;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+/*contact-form*/
+#contactForm{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 80vw;
+}
+
+#contactForm > div {
+    width: 80%;
+    margin: 0 5% 0 5% auto;
+}
+
+#mail-status{
+    font-weight: bold;
+    min-height: 25px;
+}
+
+.form-control{
+    padding: 5px;
+    margin: 5px 0 5px 0;
+    width: 80vw;
+    min-height: 40px;
+    /*box-sizing fix to change all [input] width to the same (submit is different a bit) */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px black solid;
+    
+}
+
+input[type=submit] {
+    background-color: #b08d31;
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.25em;
+}
+
+
+
+
+/* Always set the map height explicitly to define the size of the div element that contains the map. */
+#map {
+    width: 100%;
+    height: 400px;
+    max-width: 1250px;
+    min-height: 350px;
+}
+
+
+
+/*
+*******************
+-- Media Queries --
+*******************
+*/
+
+/*media queries for "small" mobiles*/
+@media screen and (max-width: 380px){
+
+}
+
+@media screen and (max-width: 480px){
+
+}
+
+/*media query for iPads, tablets and large phones*/
+@media screen and (min-width: 481px){
+
+} 
+
+@media screen and (max-width: 640px){
+
+}
+
+@media screen and (min-width: 641px){
+    
+}
+
+@media screen and (max-width: 768px){
+
+} 
+
+/*media query for small screens and laptops*/
+@media screen and (min-width: 769px){
+    #formContainer{
+        grid-template:  "contactFormA contactFormB"
+                        "contactFormA contactFormB"
+                        "contactFormA contactFormB"
+                        "contactFormC contactFormC";
+    }
+
+    #formContactA{
+        width: 40vw;   
+    }
+    #formContactB{
+        width: 40vw;   
+    }
+    .form-control{
+        width: 40vw;
+    }
+} 
+
+/*media query for desktops and large screens*/
+@media screen and (min-width: 1024px){
+    
+} 
+
+/*media query for extra large screens and TV*/
+@media screen and (min-width: 1201px){
+
+} 
+
+@media screen and (min-width: 1251px){
+    #formContainer{
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+    #formContactA {
+        max-width: 400px;
+    }
+    #formContactB {
+        max-width: 850px;
+    }
+    .form-control{
+        max-width: 850px;
+    }
+    #map{
+        border: 2px solid #b08d31 !important;
+    }
+    
+}
