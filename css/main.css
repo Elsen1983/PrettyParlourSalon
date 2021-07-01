@@ -408,6 +408,36 @@ body{
   
 }
 
+.bigTitles{
+  font-size: 1.5em;
+  padding: 25px 0 0 0;
+  margin: 0;
+  letter-spacing: 1px;
+  color: #825c1cd6;
+}
+.imageHolder{
+  width: 100vw;
+}
+.imageHolder img{
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.textDivs{
+  padding-left: 5vw !important;
+  padding-right: 5vw !important;
+  padding-bottom: 25px !important;
+  text-align: justify;
+}
+.separator{
+  display: block;
+  border-top: 2px solid #825c1cd6;
+  max-width: 50px;
+  margin: 10px 0 15px 0;
+}
+
 /*-------------------------------------------------------------------------------*/
 
 /* ---- FOOTER ---- */
@@ -579,9 +609,33 @@ Media Queries
 @media screen and (max-width: 640px){
 }
 @media screen and (min-width: 641px){
-  /* #mainTitleContainer {
-    font-size: 2.2em;
-  } */
+  .imageHolder{
+    width: auto;
+    padding-top: 30px;
+    position: relative;
+    z-index: 100;
+}
+.imageHolder img{
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    max-height: 300px;
+    width: 100%;
+    
+}
+.leftImage{
+    padding-left: 5vw;
+}
+.leftImage img{
+    border:2px solid white;
+}
+.rightImage{
+    padding-right: 5vw;
+}
+.rightImage  img{
+    border:2px solid black;
+}
   #footerMain{
     grid-template:  "a b c" 75%
                     "d d .";

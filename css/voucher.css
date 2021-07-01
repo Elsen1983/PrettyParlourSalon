@@ -1,0 +1,106 @@
+#voucherMainOne{
+    display: grid;
+    grid-template:  "voucherOneOne" 
+                    "voucherOneTwo" 
+                    "voucherOneThree";
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    justify-items: center;
+}
+#voucherMainOneOne{
+    grid-area: voucherOneOne;
+}
+#voucherMainOneTwo{
+    grid-area: voucherOneTwo;
+    
+}
+#voucherMainOneThree{
+    grid-area: voucherOneThree;
+    padding-bottom: 50px;
+}
+
+#listsContainer{
+    background: url("../content/images/borders/pricelistpinkborder-03.png");
+    background-repeat: repeat;
+    background-size: auto;
+background-repeat: repeat;
+background-size: auto;
+background-repeat: round;
+background-size: cover;
+width: 50vw;
+min-width: 300px;
+max-width: 600px;
+min-height: 175px;
+margin-bottom: 25px;
+}
+
+#voucherWarning{
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: none;
+}
+
+.validity{
+    padding-right: 30px;
+    position: absolute;
+    padding-left: 5px;
+    color: red;
+}
+
+
+/* #voucherNumber{
+}
+#confirmVoucher{
+} */
+
+/*
+*******************
+-- Media Queries --
+*******************
+*/
+
+/*media queries for "small" mobiles*/
+@media screen and (max-width: 380px){
+
+}
+
+@media screen and (max-width: 480px){
+
+}
+
+/*media query for iPads, tablets and large phones*/
+@media screen and (min-width: 481px){
+
+} 
+
+@media screen and (max-width: 640px){
+
+}
+
+@media screen and (min-width: 641px){
+    
+}
+
+@media screen and (max-width: 768px){
+
+} 
+
+/*media query for small screens and laptops*/
+@media screen and (min-width: 769px){
+
+} 
+
+/*media query for desktops and large screens*/
+@media screen and (min-width: 1024px){
+
+} 
+
+/*media query for extra large screens and TV*/
+@media screen and (min-width: 1201px){
+
+} 
+
+@media screen and (min-width: 1251px){
+
+}

@@ -1,5 +1,5 @@
 /* ---- MAIN SECTION ---- */
-#mainOne{
+#aboutMainOne{
     display: grid;
     grid-template:  "oneOne" 
                     "oneTwo"
@@ -13,46 +13,46 @@
     
 }
 
-#mainOne > div:not(#mainOneDivOne){
+#aboutMainOne > div:not(#aboutMainOneOne){
     min-height: 250px;
     width: auto;
 }
 
-#mainOneDivOne{
+#aboutMainOneDivOne{
     grid-area: oneOne;
     min-height: 0 !important;
     /* background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(247,192,204,0.5) 50%); */
 }
 
-#mainOneDivTwo{
+#aboutMainOneDivTwo{
     grid-area: oneTwo;
     width: 100vw;
 }
 
-#mainOneDivThree{
+#aboutMainOneDivThree{
     grid-area: oneThree;
     background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(247,192,204,0.5) 50%);
 }
 
-#mainOneDivFour{
+#aboutMainOneDivFour{
     grid-area: oneFour;
 }
 
-#mainOneDivFive{
+#aboutMainOneDivFive{
     grid-area: oneFive;
 }
 
-#mainOneDivSix{
+#aboutMainOneDivSix{
     grid-area: oneSix;
     background: linear-gradient(180deg, rgba(247,192,204,0.5) 0%,  rgb(255, 255, 255) 75%);
 }
 
-#mainOneDivSeven{
+#aboutMainOneDivSeven{
     grid-area: oneSeven;
     background: linear-gradient(180deg, rgba(247,192,204,0.5) 0%,  rgb(255, 255, 255) 75%);
 }
 
-#mainOneDivEight{
+#aboutMainOneDivEight{
     grid-area: oneEight;
     background: linear-gradient(180deg, rgba(247,192,204,0.5) 0%,  rgb(255, 255, 255) 75%);
 }
@@ -80,10 +80,11 @@
 } 
 
 @media screen and (max-width: 640px){
+
 }
 
 @media screen and (min-width: 641px){
-    #mainOne{
+    #aboutMainOne{
         align-items: center;
         grid-template:  "oneOne oneOne" auto
                         "oneTwo oneThree" auto
@@ -92,18 +93,18 @@
                         "oneSeven oneEight" auto;
         grid-auto-flow: column;
     }
-    #mainOneDivOne{
+    #aboutMainOneDivOne{
         padding-bottom: 10px;
         background-color: white;
     }
     
 
-    #mainOne > div:not(#mainOneDivOne){
+    #aboutMainOne > div:not(#aboutMainOneDivOne){
         height: 400px;
         padding-bottom: 0 !important;
         border-bottom: 1px solid #daa52069;
     }
-    #mainOneDivTwo{
+    #aboutMainOneDivTwo{
         background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(247,192,204,0.5) 50%);
     }
 }
