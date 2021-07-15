@@ -43,6 +43,7 @@
 
     <!-- JavaScript Files (use defer) -->
     <script src="js/app.js" type="text/javascript" defer></script>
+    <script src="js/index.js" type="text/javascript" defer></script>
 </head>
 <!-- Body -->
 <body data-pageName="home">
@@ -140,7 +141,7 @@
                 </div>
             </div>
             <div id="mainOneDivThree" class="textDivs">
-                <h2 class="bigTitles">Our Story</h2>
+                <h2 class="bigTitles">Welcome to The Beauty Parlour</h2>
                 <span class="separator"></span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                     molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
@@ -149,57 +150,42 @@
                     obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
                     nihil, eveniet aliquid culpa officia aut!
                 </p>
-                <button>Click Me</button>
+                <div class="indexButtonsContainer">
+                    <button>Click Me</button>
+                </div>
+                
             </div>
             <div id="mainOneDivFour" class="textDivs">
-                <h2 class="bigTitles">Products</h2>
+                <h2 class="bigTitles">What we do</h2>
                 <span class="separator"></span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                     molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
                     numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                    tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+                    optio, eaque rerum!
                     quia.
                 </p>
-                <button>Click Me</button>
+                <div class="indexButtonsContainer">
+                    <button>Price List</button>
+                </div>
+                
             </div>
             <div id="mainOneDivFive">
                 <div class="imageHolder rightImage">
-                    <img src="content/images/gallery/151734296_749365092381311_6061567468114817851_n.jpg" alt="products">
+                    <img src="content/images/main/haircoloring.jpg" alt="haircoloring">
                 </div>
             </div>
             <div id="mainOneDivSix" class="textDivs">
-                <h2 class="bigTitles">About Us</h2>
+                <h2 class="bigTitles">Popular Products Right now!</h2>
                 <span class="separator"></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                    tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-                    quia.
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                    tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-                    quia.
-                </p>
-                <button>Click Me</button>
+                <div id="slideshow-container"></div>
             </div>
             <div id="mainOneDivSeven">
                 <div class="imageHolder leftImage">
-                    <img src="content/images/gallery/seraphine.jpg" alt="products">
+                    <img src="content/images/main/bookingpink.jpg" alt="bookingpink">
                 </div>
             </div>
             <div id="mainOneDivEight" class="textDivs">
-                <h2 class="bigTitles">Title ABC...</h2>
+                <h2 class="bigTitles">Appointments</h2>
                 <span class="separator"></span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                     molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
@@ -210,7 +196,10 @@
                     tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
                     quia.
                 </p>
-                <button>Click Me</button>
+                <div class="indexButtonsContainer">
+                    <button>Book Online Now</button>
+                </div>
+                
             </div>
         </div>
         <!-- Main block 2 -->
@@ -296,14 +285,28 @@
                 </ul>
             </div>
             <div id="footerContainerFour" class="footerContainer">
-                <ul>
-                    <li>
-                        <a href="index.html">© 2021 The Pretty Parlour</a><span> . Created by <a href="https://dreamy-darwin-cf048c.netlify.app/portfolio/" target="_blank">Norbert Korom</a></span>
-                    </li>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                </ul>
+                <div>
+                    <ul class="footerUList" id="footerUListOne">
+                        <li>
+                            <a href="index.html">Terms & Conditions</a>
+                            <span>   .   </span>
+                            <a href="https://dreamy-darwin-cf048c.netlify.app/portfolio/" target="_blank">Privacy Policy</a>
+                            <span>   .   </span>
+                            <a href="https://dreamy-darwin-cf048c.netlify.app/portfolio/" target="_blank">Cookies</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footerUList" id="footerUListTwo">
+                        <li>
+                            <a href="index.html">© 2021 The Pretty Parlour</a><span> . Created by <a href="https://dreamy-darwin-cf048c.netlify.app/portfolio/" target="_blank">Norbert Korom</a></span>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
         </div>
         

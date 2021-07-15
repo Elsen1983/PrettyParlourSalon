@@ -132,28 +132,28 @@
             </div>
             <div id="voucherMainOneTwo">
                 <p class="voucherWhyParagraph">
-                    The Pretty Parlour Gift Vouchers make the perfect gift for a loved one! You can choose any amount you wish for the gift voucher, for use in store. To get started, simply choose an amount below!
+                    The Pretty Parlour Gift Vouchers make the perfect gift for a loved one!
                 </p>
                 <div id="listsContainer">
                     <div id="voucherMainTitle"><p><span>The Pretty Parlour</span><br id="spanSeparator"><span>Gift Voucher</span></p></div>
                     <div id="voucherAmountContainer">
                         <label class="inputTLabel" for="fromVoucher">From:</label>
-                        <input type="text" id="fromVoucher" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" title="Type your name.">
+                        <input type="text" id="fromVoucher" title="Type your name." onkeypress="return justText(event)">
                         <span class="validity" id="fromValidity">✖</span>
                         <div id="fromWhoWarning"><p>Warning message for From input.</p></div>
                         <br>
                         <label class="inputTLabel" for="toVoucher">To:</label>
-                        <input type="text" id="toVoucher" disabled onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" title="Type the name of the beneficiary.">
+                        <input type="text" id="toVoucher" disabled onkeypress="return justText(event)" title="Type the name of the beneficiary.">
                         <span class="validity" id="toValidity">✖</span>
                         <div id="toWhoWarning"><p>Warning message for To input.</p></div>
                         <br>
                         <label class="inputTLabel" for="amountVoucher">Amount ( € )</label>
-                        <input id="amountVoucher" disabled type="text" onkeypress="return isNumberKey(event)" title="Enter a Voucher Value ( € )" tabindex="-1">
+                        <input id="amountVoucher" disabled type="number" onkeypress="return isANumberKey(event)" title="Enter a Voucher Value ( € )" tabindex="-1">
                         
                         <span class="validity" id="amountValidity">✖</span>
                         <div id="amountWarning"><p>Warning message for Voucher.</p></div>
                         <div>
-                            <input id="voucherNumber" type="number" value="1" min="1" max="10" onKeyDown="return false">
+                            <input id="voucherQuantity" type="number" value="1" min="1" max="10" onKeyDown="return false">
                             <button id="confirmVoucher" disabled>Add to the Cart</button>
                         </div>
                     </div>

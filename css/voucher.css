@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
 #voucherMainOne{
     display: grid;
     grid-template:  "voucherOneOne" 
@@ -5,28 +7,31 @@
                     "voucherOneThree";
     grid-template-rows: auto 1fr;
     align-items: center;
-    justify-items: center;
+    /* justify-items: center; */
 }
 #voucherMainOneOne{
     grid-area: voucherOneOne;
 }
 #voucherMainOneTwo{
     grid-area: voucherOneTwo;
-    
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(247,192,204,0.5) 50%);
 }
 #voucherMainOneThree{
     grid-area: voucherOneThree;
     padding-bottom: 50px;
+    /* background: linear-gradient(180deg, rgba(247,192,204,0.5) 0%, rgba(255,255,255,1) 50%); */
+    background-color: rgba(247,192,204,0.5);
 }
 
 .voucherWhyParagraph{
-    max-width: 600px;
     padding: 15px 30px 15px 30px;
-    text-align: justify;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 #listsContainer{
-    background: url("../content/images/borders/pricelistpinkborder-02.png");
+    background: url("../content/images/borders/pricelistpinkborder-04.png");
     background-repeat: repeat;
     background-size: auto;
     background-repeat: repeat;
@@ -39,7 +44,11 @@
     /* margin-bottom: 25px;
     margin-top: 25px; */
     margin: 25px 5vw 25px 5vw;
-    padding: 30px;
+    padding: 15px 30px 15px 30px;
+}
+
+#voucherMainTitle{
+    padding-top: 25px;
 }
 
 #voucherMainTitle p{
@@ -49,12 +58,13 @@
 
 #voucherMainTitle span:first-child{
     font-family: 'Brock-Script' !important;
-    font-size: 1.75em;
+    font-size: 1.5em;
     /* text-shadow: 5px 8px 5px rgb(230 197 197); */
 }
 #voucherMainTitle span:nth-child(3){
-    font-size: 1.4em;
+    font-size: 2em;
     font-weight: bold;
+    font-family: 'Niconne', cursive;
 }
 
 #spanSeparator{
@@ -63,6 +73,7 @@
 }
 #voucherAmountContainer{
     text-align: center;
+    padding-bottom: 25px;
 }
 
 .inputTLabel{
@@ -94,6 +105,7 @@ input{
     padding-right: 30px;
     position: absolute;
     padding-left: 5px;
+    margin-top: 10px;
     color: red;
 }
 
@@ -104,9 +116,12 @@ input{
     border-radius: 0;
     border: 1px rgba(0, 0, 0, 0.295) solid;
     background-color: #fbcccc;
+    font-size: 0.9em;
+    font-weight: bold;
 }
 #confirmVoucher:hover, #confirmVoucher:active{
     background-color: #bfac7a;
+    color: white;
 }
 
 
@@ -146,6 +161,11 @@ input{
     #voucherMainTitle span:nth-child(3){
         padding-left: 50px;
     }
+    #listsContainer{
+        margin: auto;
+        padding: 15px;
+    }
+    
 }
 
 @media screen and (max-width: 768px){

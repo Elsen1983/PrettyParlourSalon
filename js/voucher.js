@@ -1,4 +1,5 @@
 
+/* ---- Variables ---- */
 const amountInput = document.querySelector('#amountVoucher');
 const fromWho = document.querySelector('#fromVoucher');
 const toWho = document.querySelector('#toVoucher');
@@ -16,36 +17,39 @@ const fromValiditySpan = document.querySelector('#fromValidity');
 const toValiditySpan = document.querySelector('#toValidity');
 const amountValiditySpan = document.querySelector('#amountValidity');
 
-
-const numberOfvoucher = document.querySelector('#voucherNumber');
+const numberOfvoucher = document.querySelector('#voucherQuantity');
 const addVoucherToCart_Btn = document.querySelector('#confirmVoucher');
 
 let timeout = null;
 
-
-
+/* when page load */
 window.onload = ()=>{
-    // test();
     resetInputs();
     allSignNotAccepted();
     disableElement(toWho);
     disableElement(amountInput);
     disableBtn();
 
-    fromWho.addEventListener('input', () =>{
 
+    /* ---- Event Listeners ---- */
+    fromWho.addEventListener('input', () =>{
         if(fromWho && fromWho.value !== ""){
-            
             removeFromWhoError();
             fromSignAccepted();
             enableElement(toWho);
-
             if(toWho.disabled === false && toWho.value !== ""){
-                enableElement(amountInput);
-            }else{
+                //if the amount field is disabled, but still filled with a valid number whic is bigger than 10
+                if(amountInput.disabled === true && (isNumber(amountInput.value) === true && amountInput.value >= 10) ){
+                    enableElement(amountInput);
+                    //enable the add cart button
+                    enableBtn();
+                }else{
+                    enableElement(amountInput);
+                }
+            }
+            else{
                 enableElement(toWho);
             }
-            
         }else{
             fromWhoError("Type a valid Name.");
             fromSignNotAccepted();
@@ -55,21 +59,24 @@ window.onload = ()=>{
         }
     });
 
+    
 
     toWho.addEventListener('input', () =>{
-        if(toWho && toWho.value !== ""){
+        if(toWho && toWho.value !== "") {
             removeToWhoError();
             toSignAccepted();
-            enableElement(amountInput);
-
-            console.log(isNumber(amountInput.value))
-            console.log(amountInput.disabled)
-            if(amountInput.disabled === true && isNumber(amountInput.value) === false){
+            //if the amount field is disabled, but still filled with a valid number whic is bigger than 10
+            if(amountInput.disabled === true && (isNumber(amountInput.value) === true && amountInput.value >= 10) ) {
+                enableElement(amountInput);
+                //enable the add cart button
                 enableBtn();
-            }else{
-                console.log("hmmm")
             }
-        }else{
+            //otherwise just give the chance to fix the amount
+            else {
+                enableElement(amountInput);
+            }
+        }
+        else{
             toWhoError("Type a valid Name.");
             toSignNotAccepted();
             disableElement(amountInput);
@@ -77,23 +84,18 @@ window.onload = ()=>{
         }
     });
 
-    amountInput.addEventListener('keyup', function (e) {
-        if(isNumber(e.key) || e.key === "Backspace"){
+    amountInput.addEventListener('keyup', (e) => {
+        if(isNumber(e.key) || e.key === "Backspace") {
             disableBtn();
             clearTimeout(timeout);
             timeout = setTimeout(function () {
-            console.log('Value:', amountInput.value);
-            roundAmount(amountInput.value);
-            //checkValidityOfAmount();
-            updateValue();
-        }, 1000);
+                roundAmount(amountInput.value);
+                updateValue();
+            }, 1000);
         }
-        else{
-            console.log("wrong key:" + e.key)
-        }
-        
-        
-        
+        else {
+            // console.log("wrong key:" + e.key)
+        } 
     });
 
     amountInput.addEventListener('focusin', () => {
@@ -102,18 +104,20 @@ window.onload = ()=>{
         disableBtn();
     });
 
-    // amountInput.addEventListener('input', updateValue);
+    addVoucherToCart_Btn.addEventListener('click', () => {
 
-    // amountInput.addEventListener('focusout', () => {
-    //     //round the amount to 2 decimal places
-    //     roundAmount(amountInput.value);
-    //     checkValidityOfAmount();
-    // });
+        let currentFrom = fromWho.value;
+        let currentTo = toWho.value;
+        let currentAmount = amountInput.value;
+        let currentQuantity = numberOfvoucher.value;
 
+        console.log(currentFrom);
+        console.log(currentTo);
+        console.log(currentAmount);
+        console.log(currentQuantity);
+    })
 
 };
-
-
 
 
 function updateValue() {
@@ -281,8 +285,22 @@ function disableBtn() {
     addVoucherToCart_Btn.disabled = true;
 }
 
-function isNumberKey(evt){
-    var charCode = (evt.which) ? evt.which : event.keyCode
+
+function justText(e) {
+    var letterNumber = /^[a-zA-Z ]*$/;
+    if(e.key.match(letterNumber)){
+    return true;
+    }
+    else
+    { 
+    return false; 
+    }
+    
+};
+
+//allow only numbers 
+function isANumberKey(evt){
+    var charCode = (evt.which) ? evt.which : evt.keyCode
     if (charCode > 31 && (charCode < 48 || charCode > 57)){
         return false;
     }
@@ -292,7 +310,7 @@ function isNumberKey(evt){
 }
 
 
-
+//https://dev.to/taufik_nurrohman/bringing-keyboardevent-key-and-keyboardevent-keycode-altogether-for-the-best-keyboard-interaction-experience-jlf
 
 
 

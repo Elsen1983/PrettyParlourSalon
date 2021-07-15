@@ -367,7 +367,7 @@ body{
 
 #textsvg{
   height: 70px;
-  padding-top: 10px;
+  padding-top: 25px;
 }
 
 #textsvg text {
@@ -409,11 +409,12 @@ body{
 }
 
 .bigTitles{
-  font-size: 1.5em;
+  font-size: 1.4em;
   padding: 25px 0 0 0;
   margin: 0;
   letter-spacing: 1px;
   color: #825c1cd6;
+  text-align: left;
 }
 .imageHolder{
   width: 100vw;
@@ -571,6 +572,19 @@ footer{
   font-size: 0.9em;
 }
 
+.footerUList{
+  font-size: 0.8em;
+}
+
+#footerUListOne{
+  float: left;
+}
+
+#footerUListTwo{
+  float: left;
+  padding-right: 5vw;
+}
+
 /****************
 Media Queries
 *****************/
@@ -614,31 +628,36 @@ Media Queries
     padding-top: 30px;
     position: relative;
     z-index: 100;
-}
-.imageHolder img{
-    object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 600px;
-    max-height: 300px;
-    width: 100%;
-    
-}
-.leftImage{
-    padding-left: 5vw;
-}
-.leftImage img{
-    border:2px solid white;
-}
-.rightImage{
-    padding-right: 5vw;
-}
-.rightImage  img{
-    border:2px solid black;
-}
+  }
+  .imageHolder img{
+      object-fit: cover;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 600px;
+      max-height: 300px;
+      width: 100%;
+      
+  }
+  .leftImage{
+      padding-left: 5vw;
+  }
+  .leftImage img{
+      border:2px solid white;
+  }
+  .rightImage{
+      padding-right: 5vw;
+  }
+  .rightImage  img{
+      border:2px solid black;
+  }
+
   #footerMain{
     grid-template:  "a b c" 75%
-                    "d d .";
+                    "d d d";
+  }
+
+  #footerUListTwo{
+    float: right;
   }
 }
 
@@ -649,7 +668,10 @@ Media Queries
   .navigationBar a.icon {
     display: block;
   }
-  .navigationBar.responsive {position: relative;}
+  .navigationBar.responsive {
+    position: relative;
+    padding-bottom: 10px;
+  }
   .navigationBar.responsive .icon {
     left: 0 !important; 
   }
@@ -673,14 +695,15 @@ Media Queries
 /*media query for small screens and laptops*/
 @media screen and (min-width: 769px){
   #navBar{
-    padding-top: 10px;;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     clear: both;
     border-top: none;
     border-bottom: 2px #bfac7a solid;
     border-radius: 0 0 40% 40%/0 0 30% 30%;
     max-width: 900px;
     margin: auto;
+    font-weight: bold;
   }
 
   .navigationBar {
@@ -724,7 +747,7 @@ Media Queries
   #footerMain{
     display: grid;
     grid-template:  "a b c . . . . ."
-                    "d d . . . . . .";
+                    "d d d . . . . .";
   }
 } 
 @media screen and (min-width: 1251px){
