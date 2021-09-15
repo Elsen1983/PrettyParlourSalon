@@ -90,8 +90,8 @@
                 </div>
                 <!-- search and login -->
                 <div id="searchAndLoginContainer">
-                    <a href="#search" title="Search">
-                        <img src="content/images/icons/search-9-64.png" alt="search">
+                    <a href="./content/html/productsearch.html" title="Search">
+                        <img src="content/images/icons/productsearch.png" alt="search">
                     </a>
                     <a href="#shoppingCart" title="Shopping Cart">
                         <img src="content/images/icons/shopping-cart-64.png" alt="shoppingcart">
@@ -106,7 +106,7 @@
                 <a href="javascript:void(0);" id="burgerIcon" class="active icon" onclick="menuOpenClose()">
                     <i class="fa fa-bars"></i>
                 </a>
-                <a href="./content/html/products.html"     id="products"   class="menuElem">Products</a>
+                <a href="javascript:void(0)"     id="products"   class="menuElem">Products</a>
                     <span class="menuSeparator">|</span>
                 <a href="./content/html/pricelist.html"    id="priceList"  class="menuElem">Price List</a>
                     <span class="menuSeparator">|</span>
@@ -124,7 +124,6 @@
     <!-- Main -->
     <main class="hiddenElems">
         <!-- <img id="loadImg" src="https://cdn.wallpapersafari.com/14/90/8K57Pn.jpg" alt=""> -->
-
         <!-- Main block 1 -->
         <div id="mainOne">
             <div id="mainOneDivOne">
@@ -134,40 +133,51 @@
                     <!-- <image x="35%" y="65%" width="30vw" height="35%" href="../images/1539375462.svg"> -->
                     <!-- <text x="50%" y="95%"  text-anchor="middle" style="font-size: 1.25em;">◟ ⚶ ◞</text> -->
                 </svg>
+                <div class="separatorBorder"></div>
             </div>
+            
             <div id="mainOneDivTwo">
                 <div class="imageHolder leftImage">
                     <img src="content/images/gallery/welcomeBack.jpg" alt="welcomeback">
                 </div>
             </div>
             <div id="mainOneDivThree" class="textDivs">
-                <h2 class="bigTitles">Welcome to The Beauty Parlour</h2>
-                <span class="separator"></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                    nihil, eveniet aliquid culpa officia aut!
-                </p>
-                <div class="indexButtonsContainer">
-                    <button>Click Me</button>
+                <div class="floatTextLeft">
+                    <h2 class="bigTitles">Welcome to The Beauty Parlour</h2>
+                    <span class="separator"></span>
+                    <p class="rightText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                        nihil, eveniet aliquid culpa officia aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                        optio, eaque rerum!
+                        quia.
+                    </p>
+                    <div class="indexButtonsContainer">
+                        <button onclick="window.location.href='/content/html/about.html'" >About Us</button>
+                    </div>
                 </div>
-                
             </div>
             <div id="mainOneDivFour" class="textDivs">
-                <h2 class="bigTitles">What we do</h2>
-                <span class="separator"></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum!
-                    quia.
-                </p>
-                <div class="indexButtonsContainer">
-                    <button>Price List</button>
+                <div class="floatTextRight">
+                    <h2 class="bigTitles">Our Services & Prices</h2>
+                    <span class="separator"></span>
+                    <p class="leftText"> Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                        tenetur error, harum nesciunt ipsum debitis quas aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                        optio, eaque rerum!
+                    <div class="indexButtonsContainer">
+                        <button onclick="window.location.href='/content/html/pricelist.html'">Price List</button>
+                    </div>
                 </div>
-                
             </div>
             <div id="mainOneDivFive">
                 <div class="imageHolder rightImage">
@@ -175,9 +185,12 @@
                 </div>
             </div>
             <div id="mainOneDivSix" class="textDivs">
-                <h2 class="bigTitles">Popular Products Right now!</h2>
+                <h2 class="bigTitles">Popular Products Right Now!</h2>
                 <span class="separator"></span>
                 <div id="slideshow-container"></div>
+                <div class="indexButtonsContainer">
+                    <button onclick="window.location.href='/content/html/products.html'">Browse Products</button>
+                </div>
             </div>
             <div id="mainOneDivSeven">
                 <div class="imageHolder leftImage">
@@ -185,21 +198,25 @@
                 </div>
             </div>
             <div id="mainOneDivEight" class="textDivs">
-                <h2 class="bigTitles">Appointments</h2>
-                <span class="separator"></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                    tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-                    quia.
-                </p>
-                <div class="indexButtonsContainer">
-                    <button>Book Online Now</button>
+                <div class="floatTextLeft">
+                    <h2 class="bigTitles">The Perfect Gift for Loved Ones</h2>
+                    <span class="separator"></span>
+                    <p class="rightText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                        tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+                        quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                        optio, eaque rerum!
+                    </p>
+                    <div class="indexButtonsContainer">
+                        <button onclick="window.location.href='/content/html/voucher.html'">Buy Voucher</button>
+                    </div>
                 </div>
-                
             </div>
         </div>
         <!-- Main block 2 -->
@@ -265,7 +282,7 @@
                         <a href="./index.html">Home</a>
                     </li>
                     <li>
-                        <a href="./content/html/products.html">Products</a>
+                        <a href="javascript:void(0)">Products</a>
                     </li>
                     <li>
                         <a href="./content/html/pricelist.html">Price List</a>
@@ -288,11 +305,11 @@
                 <div>
                     <ul class="footerUList" id="footerUListOne">
                         <li>
-                            <a href="index.html">Terms & Conditions</a>
+                            <a href="./content/html/termsandconditions.html">Terms & Conditions</a>
                             <span>   .   </span>
-                            <a href="https://dreamy-darwin-cf048c.netlify.app/portfolio/" target="_blank">Privacy Policy</a>
+                            <a href="./content/html/privacypolicy.html">Privacy Policy</a>
                             <span>   .   </span>
-                            <a href="https://dreamy-darwin-cf048c.netlify.app/portfolio/" target="_blank">Cookies</a>
+                            <a href="./content/html/cookies.html">Cookies</a>
                         </li>
                     </ul>
                 </div>

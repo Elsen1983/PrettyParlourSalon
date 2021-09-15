@@ -5,11 +5,12 @@
     <!-- ********************* -->
     <!-- ***** Title tag ***** -->
     <!-- ********************* -->
-    <title>The Pretty Parlour - Contact</title>
+    <title>The Pretty Parlour - Product Search</title>
 
     <!-- ********************* -->
     <!-- ***** Meta tags ***** -->
     <!-- ********************* -->
+    <meta charset="utf-8">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
     <meta content="Norbert Korom" name="author"/>
     <meta content="Norbert Korom" name="copyright"/>
@@ -24,7 +25,7 @@
     
     <link href="../../css/normalize.css" rel="stylesheet">
     <link href="../../css/main.css" rel="stylesheet" type="text/css"/>
-    <link href="../../css/contact.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/productsearch.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Place favicon.ico in the root directory -->
@@ -42,13 +43,11 @@
     <!-- <link rel="manifest" href="manifest.json"> -->
 
     <!-- JavaScript Files (use defer) -->
-    <script src="../../js/app.js" type="text/javascript" defer></script>
-    <script src="../../js/contact.js" type="text/javascript" defer></script>
-    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
-
+    <script src="../../js/app.js" defer></script>
+    <script src="../../js/productsearch.js" defer></script>
 </head>
 <!-- Body -->
-<body data-pageName="contact">
+<body data-pageName="priceList">
     <!-- Loading Overlay -->
     <div id="loadingscreen">
         <div id="loadingscreenTitleDiv" class="fontBrock">
@@ -124,108 +123,41 @@
 
     <!-- Main -->
     <main class="hiddenElems">
-        <!-- <img id="loadImg" src="https://cdn.wallpapersafari.com/14/90/8K57Pn.jpg" alt=""> -->
 
         <!-- Main block 1 -->
-        <div id="contactMainOne">
-            <div id="contactMainOneOne">
+        <div id="pricelistMainOne">
+            <div id="pricelistMainOneOne" class="fixMaxWidth">
                     <svg id="textsvg" width="100%" height="100%">   
-                        <text x="50%" y="40%"  text-anchor="middle">Contact</text>
+                        <text x="50%" y="40%"  text-anchor="middle">Product Search</text>
                         <image x="25%" y="50%" width="50%" height="40%" href="../images/dividers/divider_v2-01.svg"></image>
-                        <!-- <image x="35%" y="65%" width="30vw" height="35%" href="../images/1539375462.svg"> -->
-                        <!-- <text x="50%" y="95%"  text-anchor="middle" style="font-size: 1.25em;">◟ ⚶ ◞</text> -->
                     </svg>
-                    <div class="separatorBorder"></div>
-                    <!-- <image src="../images/divider_v2.svg"></image> -->
             </div>
-            <div id="contactMainOneTwo">
-                <div id="formContainer">
-                    <div id="formContactA">
-                        <div class="getin">Get in Touch</div>
-                        <!-- <image src="../images/divider_v2-02-01.svg"></image> -->
-                        <div class="smallSeparator"></div>
-                        <div class="contactSeparatedDivs">
-                            <span class="smallContactIcon">
-                                <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-                            </span>
-                            <span class="contactDetails">
-                                8 Howard's Court
-                                <br>
-                                Bandon
-                                <br>
-                                Co.Cork
-                                <br>   
-                                P72 KX50
-                            </span>
-                        </div>
-                        <div class="contactSeparatedDivs">
-                            <div>
-                                <span class="smallContactIcon">
-                                    <i class="fa fa-phone  fa-2x" aria-hidden="true"></i>
-                                </span>
-                                <span class="contactDetails">
-                                    +353 (0) 87 744 9836
-                                </span>
-                            </div>
-                            <div>
-                                <span class="smallContactIcon">
-                                    <i class="fa fa-envelope  fa-2x" aria-hidden="true"></i>
-                                </span>
-                                <span class="contactDetails">
-                                    seraphinakai@gmail.com
-                                </span>
-                            </div>
-                        </div>
-                        
+            <div id="pricelistMainOneTwo"  class="fixMaxWidth">
+                <div id="search_box">
+                    <div id="searchDiv">
+                        <label>
+                            <input id="searchField" type="text" name="search" placeholder="Enter some text" autocomplete="off">
+                        </label>
+                        <img id="search_icon" src="../images/icons/productsearch.png" alt="search">
                     </div>
-                    <div id="formContactB">
-                        <!-- <form target="_blank" action="https://formsubmit.co/b9d57cee006741a44580c040380f5b53" method="POST">
-                            <div class="form-group">
-                                <div class="form-row">
-                                    <div class="col">
-                                        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                                    </div>
-                                    <div class="col">
-                                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-                        </form> -->
-                        <form id="contactForm" action="https://formsubmit.co/norbertkorom@gmail.com" method="POST">
-                            <div>
-                                <input id="formName" type="text" name="name" class="form-control input-field" placeholder="Full Name" required>
-                            </div>
-                            <div>
-                                <input id="formPhone"  class="form-control input-field" type="tel" name="phone" pattern="\+?\(?([0-9]{3})\)?[-.]?\(?([0-9]{3})\)?[-.]?\(?([0-9]{4})\)?" placeholder="Valid Phone Number" required>
-                            </div>
-                            <div>
-                                <input id="formMail" type="email" name="email" class="form-control input-field" placeholder="Email Address" required>
-                            </div>
-                            <div>
-                                <textarea  id="formMessage" placeholder="Your Message" class="form-control input-field" name="message" rows="10" required></textarea>
-                            </div>
-                            <div>
-                                <input id="formSubmit" type="submit" id="contactSubmitBtn" class="form-control" name="submit" value="Submit">
-                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/content/html/contact.html">
-                                <input type="hidden" name="_template" value="table">
-                            </div>
-                            <div id="mail-status">* After pressing 'Submit' we will need a confirmation from you.</div>
-                        </form>
+                </div>
+                <div id="content_area">
+                    <div id="topOfContent"></div>
+                    <div id="percentHolder">
+                        <div id="percentage">
+                            0
+                        </div>
                     </div>
-                    <div id="formContactC"></div>
+            
+                    <progress id="progressBar" value="1" max="100"></progress>
+                    <!--    <div id="loading_txt">Searching Flickr ...</div>-->
+                    <div id="content_div">
+                    </div>
+            
                 </div>
             </div>
-            <div id="contactMainOneThree">
-
-                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9881.421742067023!2d-8.748504455355743!3d51.74482381067151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4844f4297b026a49%3A0xdcbf3eeda6a98a24!2sCloghmacsimon%2C%20Bandon%2C%20Co.%20Cork%2C%20P72%20KX50!5e0!3m2!1sen!2sie!4v1623785462055!5m2!1sen!2sie" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-                <!-- <div id="map"></div> -->
-                <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-                <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-r0F-pURxxhu5Ou80H38P08UD-Fj-Y_U&callback=initMap&libraries=&v=weekly" async></script> -->
+            <div id="pricelistMainOneThree">
+                
             </div>
             
         </div>
@@ -342,6 +274,11 @@
     <!-- ********************* -->
     <!-- **** Script tags **** -->
     <!-- ********************* -->
+
+    <script crossorigin="anonymous"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
 
     <!-- Google Analytics -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166445891-1"></script>

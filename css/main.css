@@ -283,7 +283,7 @@ body{
   text-align: center;
 }
 #searchAndLoginContainer> a > img{
-  width: 30px;
+  width: 35px;
   padding-right: 15px;
   padding-top: 10px;
   opacity: 0.85;
@@ -367,7 +367,7 @@ body{
 
 #textsvg{
   height: 70px;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 #textsvg text {
@@ -466,7 +466,7 @@ footer{
   font-size: 1.5em;
   text-align: left;
   text-shadow: 5px 8px 5px rgb(230 197 197);
-  padding: 10px 0 10px 0;
+  padding: 20px 0 10px 0;
   margin: 0 auto;
   /* min-width: 60vw;
   max-width: 60vw; */
@@ -596,6 +596,7 @@ Media Queries
   }
   #footerContainerFour ul{
     font-size: 0.8em;
+    padding-bottom: 5px;
   }
   #footerTitle{
     font-size: 1.3em;
@@ -623,6 +624,18 @@ Media Queries
 @media screen and (max-width: 640px){
 }
 @media screen and (min-width: 641px){
+
+  .separatorBorder{
+    margin: 0 auto;
+    width: 50%;
+    max-width: 500px;
+    border-bottom: 2px solid #bfac7a;
+    border-radius: 0 0 40% 40%/0 0 30% 30%;
+    height: 25px;
+    top: -15px;
+    position: relative;
+  }
+
   .imageHolder{
     width: auto;
     padding-top: 30px;

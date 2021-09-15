@@ -12,7 +12,7 @@
             "alt": "Product 02",
             "date":  "08/06/2021",
             "url": "http://127.0.0.1:5500/content/images/products/120764133_665528840764937_6575419796982621978_n.jpg",
-            "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin tempus est sem, quis condimentum ipsum lobortis at. Aliquam ornare ipsum lectus, ac mattis lorem interdum sit amet. Ut gravida, nisl et mattis hendrerit, enim velit tristique lectus, a tempor eros odio ullamcorper erat.",
+            "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin tempus est sem, quis condimentum ipsum lobortis at. Aliquam ornare ipsum lectus, ac mattis lorem interdum sit amet. ",
             "price": "10"
         },
         {
@@ -24,10 +24,10 @@
             "price": "9"
         },
         {
-            "idNumb": "3" ,
-            "alt": "Product 03",
+            "idNumb": "4" ,
+            "alt": "Product 04",
             "date":  "08/06/2021",
-            "url": "http://127.0.0.1:5500/content/images/products/94317573_561530741164748_954038671688859648_n.jpg",
+            "url": "http://127.0.0.1:5500/content/images/products/products_v1.jpg",
             "description": "Nulla eget tortor vitae mi sollicitudin molestie vel a est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam non dapibus dolor.",
             "price": "8"
         }

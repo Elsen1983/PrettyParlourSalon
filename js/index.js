@@ -2,7 +2,26 @@
 
 const slideShowContainer = document.querySelector('#slideshow-container');
 var slideIndex = 1;
+var windowWidth = window.innerWidth;
+var windowHeight = window.innerHeight;
 
+
+window.addEventListener('resize', windowChangeEventer);
+
+function windowChangeEventer(){
+    // if(window.innerWidth>641){
+    //     console.log("641+")
+    // }else{
+    //     console.log("640-")
+    // }
+
+    windowWidth = window.innerWidth;
+    windowHeight = window.innerHeight;
+
+    console.log("Width: " + windowWidth + ", Height: " + windowHeight)
+
+    showSlides(1);
+}
 
 window.onload = ()=>{    
     //generate the images based on the JSON file (gallery.json)
@@ -32,21 +51,21 @@ window.onload = ()=>{
 
             // console.log(data)
             let productsObjectArray = data.selectedProducts;
-            let imagesUrlArray = [];
-            let imagesAltArray = [];
-            let imagesDescriptionArray = [];
+            let urlArray = [];
+            let altArray = [];
+            let descriptionArray = [];
+            let priceArray = [];
 
             productsObjectArray.forEach(function(value,key){
-                imagesUrlArray.push(value.url);
-                imagesAltArray.push(value.alt);
-                imagesDescriptionArray.push(value.description);
+                urlArray.push(value.url);
+                altArray.push(value.alt);
+                descriptionArray.push(value.description);
+                priceArray.push(value.price);
             });
 
-            // console.log(imagesUrlArray);
-
-            generateSlides(imagesUrlArray, imagesAltArray, imagesDescriptionArray);
+            generateSlides(urlArray, altArray, descriptionArray, priceArray);
             generatePrevNextButtons();
-            generateDotButtons(imagesUrlArray.length);
+            //generateDotButtons(imagesUrlArray.length);
 
             showSlides(slideIndex);
 
@@ -60,7 +79,7 @@ window.onload = ()=>{
     
 }
 
-function generateSlides(urlArray, altArray, descriptionArray){
+function generateSlides(urlArray, altArray, descriptionArray, priceArray){
     /*
     Example
     <div class="mySlides fade">
@@ -90,13 +109,24 @@ function generateSlides(urlArray, altArray, descriptionArray){
         imageElem.setAttributeNode(imageAlt);
         imageElem.className = "prodImg";
 
+        let productNameDiv = document.createElement('div');
+        productNameDiv.className = "mainProductName";
+        productNameDiv.textContent = altArray[i];
+
         let textDiv = document.createElement('div');
-        textDiv.className = "text";
+        textDiv.className = "productDescription";
         textDiv.textContent = descriptionArray[i];
 
-        mySlidesFadeDiv.append(numberTextDiv);
+        let priceDiv = document.createElement('div');
+        priceDiv.className = "sampleProductPrice";
+        priceDiv.textContent = "Price: " + priceArray[i] + "€";
+
+        // mySlidesFadeDiv.append(numberTextDiv);
         mySlidesFadeDiv.append(imageElem);
+        mySlidesFadeDiv.append(productNameDiv);
         mySlidesFadeDiv.append(textDiv);
+        mySlidesFadeDiv.append(priceDiv);
+
         slideShowContainer.append(mySlidesFadeDiv);
 
         index++;
@@ -130,8 +160,10 @@ function generatePrevNextButtons(){
 
 }
 
+//this function is not used at the moment, but kept it in the code because could be useful later
 function generateDotButtons(dotsNumber){
     console.log(dotsNumber)
+    
     /*
     Sample
     <div style="text-align:center">
@@ -159,7 +191,6 @@ function generateDotButtons(dotsNumber){
 
 
 function plusSlides(n) {
-    console.log("clicked plusdot")
     showSlides(slideIndex += n);
 }
 
@@ -168,23 +199,47 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-    console.log("clicked")
     var i;
     var slides = document.getElementsByClassName('mySlides fade');
     console.log(slides.length)
-    var dots = document.getElementsByClassName("dot");
+    //var dots = document.getElementsByClassName("dot");
     if (n > slides.length) {
         slideIndex = 1
     }    
     if (n < 1) {
         slideIndex = slides.length
     }
+
+    var previousBtn = document.querySelector('.prev');
+    var nextBtn = document.querySelector('.next');
+
+
+
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+        //when the screen size is bigger than 640 then separate the products from slideshow
+        if(windowWidth > 640){
+            slides[i].style.display = "block";
+            slideShowContainer.className = "bigDevice";
+            previousBtn.style.display = "none";
+            nextBtn.style.display = "none";
+        }
+        else{
+            slides[i].style.display = "none";
+            slideShowContainer.className = "smallDevice";
+            previousBtn.style.display = "block";
+            nextBtn.style.display = "block"; 
+        }
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
+
+    slides[slideIndex-1].style.display = "block"; 
+
+    // for (i = 0; i < dots.length; i++) {
+    //     dots[i].className = dots[i].className.replace(" active", "");
+    // }
+
+    //dots[slideIndex-1].className += " active";
 }
+
+
+
+
